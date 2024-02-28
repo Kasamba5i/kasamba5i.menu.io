@@ -1,0 +1,32 @@
+.nav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+.nav a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+label{
+    display: none;
+    float: right;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+#toggle{
+    display: none;
+}
+
+@media screen and (max-width: 600px){
+    .nav a{display: none;}
+    label{display: block;}
+    #toggle:checked + .menu{display: block;}
+    .menu a{display: block; text-align: left;}
+    .menu{display: none;}
+}
